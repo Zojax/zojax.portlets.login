@@ -1,0 +1,11 @@
+/* zrt-cssregistry: */
+
+@media all {
+
+  .portlet_openid_btn {
+    width: 24px;
+    height: 24px;
+    float: left;
+  }
+
+}

@@ -1,0 +1,11 @@
+<configure 
+   xmlns="http://namespaces.zope.org/zope"
+   xmlns:zojax="http://namespaces.zope.org/zojax">
+
+  <zojax:pagelet
+     name="testportlet.html"
+     for="*"
+     template="testportlet.pt"
+     permission="zope.Public" />
+
+</configure>

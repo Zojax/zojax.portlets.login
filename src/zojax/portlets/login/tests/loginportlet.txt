@@ -1,0 +1,46 @@
+=============
+Login portlet
+=============
+
+  >>> from zope import component
+  >>> from zope.testbrowser.testing import Browser
+  >>> from zope.app.component.hooks import setSite
+  >>> from zope.app.security.interfaces import IAuthentication
+  >>> from zope.app.testing.functional import getRootFolder
+
+  >>> from zojax.authentication.interfaces import IAuthenticationConfiglet
+
+  >>> root = getRootFolder()
+  >>> setSite(root)
+  >>> configlet = component.getUtility(IAuthenticationConfiglet)
+
+  >>> configlet.uninstallUtility(True)
+  >>> configlet.installUtility()
+
+  >>> auth = root.getSiteManager().getUtility(IAuthentication)
+  >>> auth.authenticatorPlugins = ('authplugin',)
+
+Login portlet
+
+  >>> actor = Browser()
+  >>> actor.handleErrors = False
+  >>> actor.open("http://localhost/testportlet.html")
+
+  >>> actor.getControl(name='zojax-login').value = 'bob'
+  >>> actor.getControl(name='zojax-password').value = 'secretcode'
+  >>> actor.getControl(name='form.zojax-auth-login').click()
+
+  >>> print actor.url
+  http://localhost/testportlet.html
+  
+  >>> print actor.contents
+  <html>
+  ...
+  ...<div>bob</div>
+  <div>Bob</div>...
+  ...
+  </html>
+
+  >>> configlet.uninstallUtility(True)
+  >>> setSite(None)
+

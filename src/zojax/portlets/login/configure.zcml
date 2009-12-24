@@ -1,0 +1,33 @@
+<configure
+   xmlns="http://namespaces.zope.org/zope"
+   xmlns:i18n="http://namespaces.zope.org/i18n"
+   xmlns:zojax="http://namespaces.zope.org/zojax"
+   i18n_domain="zojax.portlets.login">
+
+  <!-- login portlet -->
+  <zojax:portlet
+     name="portlet.login"
+     title="Login portlet"
+     template="portlet.pt"
+     class=".portlet.LoginPortlet" />
+
+  <!-- resources -->
+  <zojax:resourcedirectory
+     name="portlet_login_images"
+     directory="images" />
+
+  <zojax:resourceinclude
+     name="portlet-login-openid.js"
+     file="openid-jquery.js"
+     require="jquery" library="portlet-login" type="javascript" />
+
+  <zojax:resourceinclude
+     name="zojax-portlets-login.css"
+     library="zojax"
+     type="stylesheet"
+     file="styles.css" filetype="zrt" />
+
+  <!-- translations -->
+  <i18n:registerTranslations directory="locales"/>
+
+</configure>
