@@ -1,64 +1,8 @@
-=======
-CHANGES
-=======
-
-1.1.0 (2009-11-18)
+1.0.2 (Unreleased)
 ------------------
 
-- Added OpenId support for zojax.principal.users 1.4.0
 
-
-1.0.6 (2009-08-12)
+1.0.1 (2010-01-19)
 ------------------
 
-- Do no use user.png in portlet
-
-
-1.0.5 (2009-06-23)
-------------------
-
-- Copyright changed to 'Zope Foundation and Contributors'
-
-
-1.0.4 (2009-05-20)
-------------------
-
-- Do not use z3c.autoinclude
-
-
-1.0.3 (2009-03-17)
-------------------
-
-- Use zojax.personal.bar instead of zojax.ui.personalbar
-
-
-1.0.2 (2009-01-07)
-------------------
-
-- Added 'portlet-login' css class to portlet
-
-
-1.0.1 (2008-10-17)
-------------------
-
-- Use new i18n domain
-
-- Added translations: ru, nl
-
-
-1.0.0 (2008-10-04)
-------------------
-
-- Package renamed
-
-
-0.99.1 (2008-09-03)
--------------------
-
-- Added interface for portlet
-
-
-0.99.0 (2008-06-03)
-------------------
-
-- initial import
+- zojax initial release
