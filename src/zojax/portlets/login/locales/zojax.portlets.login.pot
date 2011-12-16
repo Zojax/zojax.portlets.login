@@ -1,0 +1,64 @@
+##############################################################################
+#
+# Copyright (c) 2003-2004 Zope Corporation and Contributors.
+# All Rights Reserved.
+#
+# This software is subject to the provisions of the Zope Public License,
+# Version 2.1 (ZPL).  A copy of the ZPL should accompany this distribution.
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY AND ALL EXPRESS OR IMPLIED
+# WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF TITLE, MERCHANTABILITY, AGAINST INFRINGEMENT, AND FITNESS
+# FOR A PARTICULAR PURPOSE.
+#
+##############################################################################
+msgid ""
+msgstr ""
+"Project-Id-Version: Development/Unknown\n"
+"POT-Creation-Date: Thu Dec  8 23:16:36 2011\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Zope 3 Developers <zope3-dev@zope.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: zope/app/locales/extract.py\n"
+
+#: src/zojax/portlets/login/configure.zcml:8
+msgid "Login portlet"
+msgstr ""
+
+#: src/zojax/portlets/login/portlet.pt:10
+msgid "Sign-in with OpenID"
+msgstr ""
+
+#: src/zojax/portlets/login/portlet.pt:17
+msgid "Sign-In"
+msgstr ""
+
+#: src/zojax/portlets/login/portlet.pt:3
+msgid "Log in"
+msgstr ""
+
+#: src/zojax/portlets/login/portlet.pt:35
+#: src/zojax/portlets/login/portlet.pt:37
+msgid "Login Name"
+msgstr ""
+
+#: src/zojax/portlets/login/portlet.pt:45
+#: src/zojax/portlets/login/portlet.pt:47
+msgid "Password"
+msgstr ""
+
+#: src/zojax/portlets/login/portlet.pt:55
+#. Default: "Log in"
+msgid "alt"
+msgstr ""
+
+#: src/zojax/portlets/login/portlet.pt:67
+msgid "Forgot your password?"
+msgstr ""
+
+#: src/zojax/portlets/login/portlet.pt:76
+msgid "New user?"
+msgstr ""
+
