@@ -41,6 +41,5 @@ Login portlet
   ...
   </html>
 
-  >>> configlet.uninstallUtility(True)
   >>> setSite(None)
 
